@@ -46,9 +46,14 @@ It's smart in that it:
       </p>
     
       <form autocomplete="on">
+        <div >
+          <label for="Address_bar">Address_bar</label>
+          <input id="Address_bar" type="text" name="Address_bar" placeholder="Enter an address" autofocus>
+        </div>
+
         <div class="field">
           <label for="country">country *</label>
-          <input id="country" type="text" name="country" pattern="^[A-Za-z]'?[- A-Za-z]+$" placeholder="Enter a country" autofocus required>
+          <input id="country" type="text" name="country" pattern="^[A-Za-z]'?[- A-Za-z]+$" required>
         </div>
         
         <div class="field">
@@ -99,6 +104,6 @@ It's smart in that it:
     </div>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlF6-hccVs3_fZVki0XcCWMarCsUdVM3U&libraries=places"></script>
-    <script type="text/javascript" src="address_form.js"></script>
+    <script type="text/javascript" src="address_form2.js"></script>
   </body>  
 </html>
