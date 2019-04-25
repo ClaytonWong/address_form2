@@ -1,6 +1,6 @@
 var placeSearch, autocomplete;
 
-var componentForm = {
+var addressComponents = {
   street_number: 'long_name',
   route: 'long_name', // Street name
   postal_code: 'long_name',
@@ -33,8 +33,8 @@ function fillInAddress() {
   // and then fill-in the corresponding field on the form.
   for (var i = 0; i < place.address_components.length; i++) {
     var addressType = place.address_components[i].types[0];
-    if (componentForm[addressType]) {
-      var val = place.address_components[i][componentForm[addressType]];
+    if (addressComponents[addressType]) {
+      var val = place.address_components[i][addressComponents[addressType]];
       document.getElementById(addressType).value = val;
     }
   }
