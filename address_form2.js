@@ -5,8 +5,9 @@ var componentForm = {
   route: 'long_name', // Street name
   /*
   locality: 'long_name',
-  administrative_area_level_1: 'long_name',
+  
   */
+  administrative_area_level_1: 'long_name', // State
   postal_code: 'long_name',
   country: 'long_name'
 };
