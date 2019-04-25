@@ -3,12 +3,9 @@ var placeSearch, autocomplete;
 var componentForm = {
   street_number: 'long_name',
   route: 'long_name', // Street name
-  /*
-  locality: 'long_name',
-  
-  */
-  administrative_area_level_1: 'long_name', // State
   postal_code: 'long_name',
+  locality: 'long_name', // Suburb
+  administrative_area_level_1: 'long_name', // State
   country: 'long_name'
 };
 
