@@ -1,0 +1,104 @@
+<!--
+Smart Address Form:
+This is a responsive name form that is designed for mobiles first.
+It allows for country, state, city, suburb, postcode, street, street number,
+level and unit.
+
+It's smart in that it:
+
+* requires the user to put in the country, street and street number.
+* can validate the the fields.
+* displays error messages if the wrong type of input is given, e.g. a 
+  number in country.
+* displays an error message if the country, street and street number are not given.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="address_form.css" />
+
+    <title>Form for residential address</title>
+  </head>
+    
+  <body>
+    <p class="title_bar">
+      Clayton's Address Form
+    </p>
+    
+    <div class="form">
+      <p>
+        * required.
+      </p>
+
+      <p>
+        Country, state, city, suburb, and street can only use letters, spaces and hyphens.
+      </p>
+
+      <p>
+        Postcode, level, and unit can only use letters and numbers.
+      </p>
+
+      <p>
+        Street number can have a number followed by letters or can be numbers only.
+      </p>
+    
+      <form autocomplete="on">
+        <div class="field">
+          <label for="country">country *</label>
+          <input id="country" type="text" name="country" pattern="^[A-Za-z]'?[- A-Za-z]+$" placeholder="Enter a country" autofocus required>
+        </div>
+        
+        <div class="field">
+          <label for="state">state</label>
+          <input id="state" type="text" name="state" pattern="^[A-Za-z]'?[- A-Za-z]+$">
+        </div>
+             
+        <div class="field">
+          <label for="city">city</label>
+          <input id="city" type="text" name="city" pattern="^[A-Za-z]'?[- A-Za-z]+$">
+        </div>
+        
+        <div class="field">
+          <label for="suburb">suburb</label>
+          <input id="suburb" type="text" name="suburb" pattern="^[A-Za-z]'?[- A-Za-z]+$">
+        </div>
+        
+        <div class="field">
+          <label for="postcode">postcode</label>
+          <input id="postcode" type="text" name="postcode" pattern="[0-9A-Za-z]+">
+        </div>        
+
+        <div class="field">
+          <label for="street">street *</label>
+          <input id="street" type="text" name="street" pattern="^[A-Za-z]'?[- A-Za-z]+$" required>
+        </div>
+        
+        <div class="field">
+          <label for="street_number">Street number *</label>
+          <input id="street_number" type="text" name="street_number" pattern="[0-9]+[A-Za-z]*$" required>
+        </div>
+        
+        <div class="field">
+          <label for="level">level</label>
+          <input id="level" type="text" name="level" pattern="[0-9A-Za-z]+">
+        </div>
+        
+        <div class="field">
+          <label for="unit">unit</label>
+          <input id="unit" type="text" name="unit" pattern="[0-9A-Za-z]+">
+        </div>
+        
+        <div class="button_bar">
+          <button class="reset_button" type="reset">clear form</button>
+          <button class="save_and_continue_button" type="submit">save and continue</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlF6-hccVs3_fZVki0XcCWMarCsUdVM3U&libraries=places"></script>
+    <script type="text/javascript" src="address_form.js"></script>
+  </body>  
+</html>
