@@ -1,4 +1,4 @@
-var placeSearch, autocomplete;
+var autocomplete;
 
 var addressComponents = {
   street_number: 'long_name',
