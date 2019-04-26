@@ -53,7 +53,11 @@ It's smart in that it:
       </p>
 
       <p>
-        Country, state, city, suburb, and street can only use letters, spaces and hyphens.
+        Country, state, city, and suburb, can only use letters, spaces and hyphens.
+      </p>
+
+      <p>
+        Street can only use numbers, letters, spaces and hyphens.
       </p>
 
       <p>
@@ -97,7 +101,7 @@ It's smart in that it:
 
         <div class="field">
           <label for="street">street *</label>
-          <input id="route" type="text" name="street" pattern="^[A-Za-z]'?[- A-Za-z]+$" required>
+          <input id="route" type="text" name="street" pattern="^[0-9A-Za-z]'?[- 0-9A-Za-z]+$" required>
         </div>
         
         <div class="field">
