@@ -21,9 +21,11 @@ To get this form to work, you will need the following:
 * Google Places API key
 * Google Maps JavaScript API key
 Both can be obtained from Google Cloud Platform. In addition, you will also need to 
-activate both of the above mentioned APIs.
+activate or enable both of the above mentioned APIs.
 Once you have got the Google Places API key, you will need to put in into the file
-address_form2.html. 
+address_form2.html, near the bottom, at the line:
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initAutocomplete" async defer></script>
 
 ## Background 
 The first version does not have an address-bar or autocomplete features but does
