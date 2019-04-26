@@ -6,12 +6,6 @@ body {
   background-color: dodgerblue;
 }
 
-p {
-  max-width: 500px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .title_bar {
   margin-left: auto;
   margin-right: auto;
@@ -28,8 +22,14 @@ p {
   margin-right: auto;
   max-width: 500px;
   border-radius: 5px;
-  padding: 5px 10px 10px 10px;
+  padding: 10px;
   background-color: white;
+}
+
+p {
+  max-width: 500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 input {
