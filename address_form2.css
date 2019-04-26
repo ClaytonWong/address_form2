@@ -8,6 +8,8 @@ body {
 
 p {
   max-width: 400px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .title_bar {
@@ -26,7 +28,7 @@ p {
   margin-right: auto;
   max-width: 500px;
   border-radius: 5px;
-  padding: 5px 0px 10px 10px;
+  padding: 5px 10px 10px 10px;
   background-color: white;
 }
 
