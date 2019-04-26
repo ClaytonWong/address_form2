@@ -22,9 +22,14 @@ have the smarts to validate fields and require the user to enter a country, stre
 street number.
 The code and the demonstration of it is at the link below:
 
-http://www.codepen.io.
+https://codepen.io/CW00000000/pen/bzXPLK
 
 My original intention was to have autocomplete for the country, state, suburb, and
 street name fields using the Google Places API when the user starts typing into them.
 But the API will supply more than one thing when the user starts typing into any of 
-those fields by giving the state followed by the country in the same field for example.
+those fields, for example, by giving the state followed by the country in the same field.
+Hence my decision to create this version with the address-bar.
+My JavaScript code for the autocomplete was a modified version of the code used in the 
+example below:
+
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
