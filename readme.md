@@ -20,6 +20,7 @@ The version has the following features:
 To get this form to work, you will need the following:
 * Google Places API key
 * Google Maps JavaScript API key
+
 Both can be obtained from Google Cloud Platform. In addition, you will also need to 
 activate or enable both of the above mentioned APIs.
 Once you have got the Google Places API key, you will need to put in into the file
